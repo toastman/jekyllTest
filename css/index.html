@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSS</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="icon" href="http://media.eleks.com/media/Content/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="/public/styles/preview.css">
+  <link rel="stylesheet" href="/public/styles/eleks-ui-kit.css">
+  <link rel="canonical" href="http://yourdomain.com/css/">
+  <link rel="alternate" type="application/rss+xml" title="Eleks web ui kit" href="http://yourdomain.com/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="e-navbar e-navbar-primary">
+    <div class="e-container">
+        <a href="" class="e-navbar-brand">
+            <img src="/public/img/logo_white.png" alt="logo">
+        </a>
+
+        <ul class="e-nav e-nav-inline">
+            
+              
+                
+                    <li class="e-nav-item">
+                        <a href="/css/" class="e-nav-link active">CSS</a>
+                    </li>
+                
+              
+            
+              
+                
+                    <li class="e-nav-item">
+                        <a href="/getting_started/" class="e-nav-link">Getting started</a>
+                    </li>
+                
+              
+            
+              
+            
+        </ul>
+    </div>
+</header>
+
+
+    <div class="e-container">
+        <div>
+    <div class="e-example-wrap">
+
+	<!-- Inputs start -->
+	<h2>Inputs</h2>
+	<p>A general description of the input fields</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-form-group">
+    <label for="inputNormal" class="e-input-label e-required">Label</label>
+    <input id="inputNormal" type="text" placeholder="Normal state" class="e-input">
+    <small class="e-text-muted">We'll never share your email with anyone else.</small>
+</div>
+			</div>
+		</div>
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-form-group">
+    <label for="inputDisabled" class="e-input-label">Label</label>
+    <input id="inputDisabled" type="text" placeholder="Disabled state" disabled class="e-input">
+</div>
+			</div>
+		</div>
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-form-group">
+    <label for="inputReadonly" class="e-input-label">Label</label>
+    <input id="inputReadonly" type="text" placeholder="Readonly state" readonly class="e-input">
+</div>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e-form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNormal"</span> <span class="na">class=</span><span class="s">"e-input-label e-required"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"inputNormal"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Normal state"</span> <span class="na">class=</span><span class="s">"e-input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"e-text-muted"</span><span class="nt">&gt;</span>We'll never share your email with anyone else.<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+	</code></pre></figure>
+	<!-- Inputs end -->
+
+
+	<!-- Inputs sizing start -->
+	<h2>Inputs sizing</h2>
+	<p>A general description of the input fields sizing</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<input type="text" placeholder="Normal state for input lg" class="e-input e-input-lg">
+<input type="text" placeholder="Normal state for input default" class="e-input">
+<input type="text" placeholder="Normal state for input sm" class="e-input e-input-sm">
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Normal state for input lg"</span> <span class="na">class=</span><span class="s">"e-input e-input-lg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Normal state for input default"</span> <span class="na">class=</span><span class="s">"e-input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Normal state for input sm"</span> <span class="na">class=</span><span class="s">"e-input e-input-sm"</span><span class="nt">&gt;</span>
+	</code></pre></figure>
+	<!-- Inputs sizing end -->
+
+
+	<!-- Checkboxes start -->
+	<h2>Checkboxes</h2>
+	<p>A general description of the checkboxes</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-checkbox">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Check this custom checkbox
+	</label>
+</div>
+
+
+				<div class="e-checkbox e-disabled">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Disable state for custom checkbox
+	</label>
+</div>
+
+				<div class="e-checkbox e-disabled">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Disable state for custom checked checkbox
+	</label>
+</div>
+			</div>
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-checkbox-inverse">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Check this custom inverse checkbox
+	</label>
+</div>
+
+				<div class="e-checkbox e-disabled">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Disable state for custom checkbox
+	</label>
+</div>
+
+				<div class="e-checkbox-inverse e-disabled">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Disable state for custom inverse checkbox
+	</label>
+</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="e-row">
+		<div class="e-col-sm-6 e-col-xs-12">
+	        <figure class="highlight"><pre><code class="language-html" data-lang="html">			    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e-checkbox"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>
+	    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+	    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"e-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	    Check this custom checkbox
+	<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+			</code></pre></figure>		
+		</div>
+		<div class="e-col-sm-6 e-col-xs-12">
+			<figure class="highlight"><pre><code class="language-html" data-lang="html">			    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e-checkbox-inverse"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>
+	    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+	    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"e-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	    Check this custom inverse checkbox
+	<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+			</code></pre></figure>		
+		</div>
+	</div>
+	<!-- Checkboxes end -->
+
+	<!-- Radio Buttons start -->
+	<h2>Radio Buttons</h2>
+	<p>A general description of the radio buttons</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-6 e-col-xs-12">
+				<div class="e-radio">
+	<label>
+	    <input type="radio">
+	    <span class="e-icon"></span>
+	    Check this custom radio
+	</label>
+</div>
+
+				<div class="e-radio e-disabled">
+	<label>
+	    <input type="radio" disabled>
+	    <span class="e-icon"></span>
+	    This is custom disabled radio button
+	</label>
+</div>
+
+				<div class="e-radio e-disabled">
+	<label>
+	    <input type="radio" disabled checked>
+	    <span class="e-icon"></span>
+	    This is custom checked disabled radio button
+	</label>
+</div>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e-radio"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>
+	    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+	    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"e-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+	    Check this custom radio
+	<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+	</code></pre></figure>
+	<!-- Radio Buttons end -->
+
+	<!-- Validation start -->
+	<h2>Validation</h2>
+	<p>A general description of the validation states</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-4 e-col-xs-12">
+				<div class="e-form-group e-has-success">
+    <label for="inputNormal" class="e-input-label e-required">Label</label>
+    <input id="inputNormal" type="text" placeholder="Normal state" class="e-input e-success" value="Simple text">
+    <small class="e-text-muted">Text of the success</small>
+</div>
+				<div class="e-form-group e-has-warning">
+    <label for="inputNormal" class="e-input-label e-required">Label</label>
+    <input id="inputNormal" type="text" placeholder="Normal state" class="e-input e-warning" value="Simple text">
+    <small class="e-text-muted">Text of the warning</small>
+</div>
+				<div class="e-form-group e-has-danger">
+    <label for="inputNormal" class="e-input-label e-required">Label</label>
+    <input id="inputNormal" type="text" placeholder="Normal state" class="e-input e-danger" value="Simple text">
+    <small class="e-text-muted">Text of the error</small>
+</div>
+			</div>
+			<div class="e-col-sm-8 e-col-xs-12">
+				<div class="e-row">
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox e-has-success">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default checkbox with success
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-success">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default disabled checkbox with success
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-success">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default disabled checked checkbox with success
+	</label>
+</div>
+						</div>
+					</div>
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox-inverse e-has-success">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with success
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-success">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with success
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-success">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with success
+	</label>
+</div>
+						</div>
+					</div>
+				</div>
+				<div class="e-row">
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox e-has-warning">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default checkbox with warning
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-warning">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default disabled checkbox with warning
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-warning">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default disabled checked checkbox with warning
+	</label>
+</div>
+						</div>
+					</div>
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox-inverse e-has-warning">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with warning
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-warning">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with warning
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-warning">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with warning
+	</label>
+</div>
+						</div>
+					</div>
+				</div>
+				<div class="e-row">
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox e-has-danger">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default checkbox with danger
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-danger">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default disabled checkbox with danger
+	</label>
+</div>
+							<div class="e-checkbox e-disabled e-has-danger">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default disabled checked checkbox with danger
+	</label>
+</div>
+						</div>
+					</div>
+					<div class="e-col-sm-6 e-col-xs-12">
+						<div class="e-form-group">
+							<div class="e-checkbox-inverse e-has-danger">
+	<label>
+	    <input type="checkbox">
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with danger
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-danger">
+	<label>
+	    <input type="checkbox" disabled>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with danger
+	</label>
+</div>
+							<div class="e-checkbox-inverse e-disabled e-has-danger">
+	<label>
+	    <input type="checkbox" disabled checked>
+	    <span class="e-icon"></span>
+	    Default inverse checkbox with danger
+	</label>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Validation end -->
+
+	<!-- Buttons start -->
+	<h2>Buttons</h2>
+	<p>A general description of the buttons</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<button class="e-btn e-btn-primary" type="button">Primary</button>
+<button class="e-btn e-btn-secondary" type="button">Secondary</button>
+<button class="e-btn e-btn-success" type="button">Success</button>
+<button class="e-btn e-btn-info" type="button">Info</button>
+<button class="e-btn e-btn-warning" type="button">Warning</button>
+<button class="e-btn e-btn-danger" type="button">Danger</button>
+<button class="e-btn e-btn-link" type="button">Link</button>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-success"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-info"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-warning"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-link"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+	</code></pre></figure>
+	<!-- Buttons end -->
+
+	<!-- Buttons inverse start -->
+	<h2>Buttons inverse</h2>
+	<p>A general description of the buttons inverse</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<button class="e-btn e-btn-primary-outline" type="button">Primary</button>
+<button class="e-btn e-btn-secondary-outline" type="button">Secondary</button>
+<button class="e-btn e-btn-success-outline" type="button">Success</button>
+<button class="e-btn e-btn-warning-outline" type="button">Warning</button>
+<button class="e-btn e-btn-danger-outline" type="button">Danger</button>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-primary-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-secondary-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-success-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-warning-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-danger-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+	</code></pre></figure>
+	<!-- Buttons inverse end -->
+
+	<!-- Buttons disabled start -->
+	<h2>Buttons disabled</h2>
+	<p>A general description of the buttons disabled</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<button class="e-btn e-btn-primary" type="button" disabled>Primary</button>
+<button class="e-btn e-btn-secondary" type="button" disabled>Secondary</button>
+<button class="e-btn e-btn-success" type="button" disabled>Success</button>
+<button class="e-btn e-btn-info" type="button" disabled>Info</button>
+<button class="e-btn e-btn-warning" type="button" disabled>Warning</button>
+<button class="e-btn e-btn-danger" type="button" disabled>Danger</button>
+<button class="e-btn e-btn-link" type="button" disabled>Link</button>
+<button class="e-btn e-btn-primary-outline" type="button" disabled>All inverse disabled</button>
+			</div>
+		</div>
+	</div>
+	<!-- Buttons disabled end -->
+
+	<!-- Buttons sizing start -->
+	<h2>Buttons sizing</h2>
+	<p>A general description of the buttons sizing</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<button class="e-btn e-btn-primary e-btn-lg" type="button">Large button</button>
+<button class="e-btn e-btn-primary" type="button">Normal button</button>
+<button class="e-btn e-btn-primary e-btn-sm" type="button">Small button</button>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-primary e-btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Normal button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"e-btn e-btn-primary e-btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+	</code></pre></figure>
+	<!-- Buttons sizing end -->
+
+	<!-- Breadcrumbs start -->
+	<h2>Breadcrumbs</h2>
+	<p>A general description of the breadcrumbs</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+	</code></pre></figure>
+	<!-- Breadcrumbs end -->
+
+	<!-- Links start -->
+	<h2>Links</h2>
+	<p>A general description of the links</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<a href="#">Link</a>
+
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+
+	</code></pre></figure>
+	<!-- Links end -->
+
+	<!-- Headings start -->
+	<h2>Headings</h2>
+	<p>A general description of the headings</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<h1>Test h1</h1>
+<h2>Test h2</h2>
+<h3>Test h3</h3>
+<h4>Test h4</h4>
+<h5>Test h5</h5>
+<h6>Test h6</h6>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;h1&gt;</span>Test h1<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Test h2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Test h3<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Test h4<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Test h5<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Test h6<span class="nt">&lt;/h6&gt;</span>
+	</code></pre></figure>
+	<!-- Headings end -->
+
+	<!-- Paragraph start -->
+	<h2>Paragraph</h2>
+	<p>A general description of the headings</p>
+
+	<div class="e-example-block">
+		<div class="e-row">
+			<div class="e-col-sm-12">
+				<p>Nullam quis risus eget urna mollis ornare vel eu leo.
+Cum sociis natoque penatibus et magnis dis parturient montes,
+nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+<p>Test another paragraph</p>
+<p>Test another paragraph</p>
+			</div>
+		</div>
+	</div>
+
+	<figure class="highlight"><pre><code class="language-html" data-lang="html">	    <span class="nt">&lt;p&gt;</span>Nullam quis risus eget urna mollis ornare vel eu leo.
+Cum sociis natoque penatibus et magnis dis parturient montes,
+nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Test another paragraph<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Test another paragraph<span class="nt">&lt;/p&gt;</span>
+	</code></pre></figure>
+	<!-- Paragraph end -->
+</div>	
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+    <footer class="e-footer e-container">© 1999-2016 ELEKS, All rights reserved</footer>
+
+
+  </body>
+
+</html>
